@@ -1,0 +1,42 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-family: impact;
+
+}
+
+#container {
+
+	text-align: center;
+}
+	#title {
+		margin: 15px 0 0 0;
+		font-size: 80px;
+	}
+		#little {
+			font-size: 40px;
+		}
+#jumbo_tron {
+	width: 900px;
+	height: 500px;
+	border: 2px solid black;
+	position: relative;
+}
+	#jumbo_tron > div {
+		position: absolute;
+	}
+
+#lion_btn {
+	width: 210px;
+	height: 140px;
+}
+	#button {
+		width: 210px
+	}
+	#button_text {
+		position: absolute;
+		margin: 40px 0 0 70px;
+		font-size: 24px;
+		color: white;
+		letter-spacing: 3px;
+	}
