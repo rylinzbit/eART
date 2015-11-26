@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "artist_login_controller/index";
+$route['default_controller'] = "artistLoginController/index";
 $route['artist_login'] = "artist_login_controller/artist_login";
 $route['artist_register'] = "artist_login_controller/artist_register";
 $route['404_override'] = '';

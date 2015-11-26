@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Artists extends CI_Model {
+class Artist extends CI_Model {
 
 	public function artist_login($email, $password)
 	{
@@ -8,7 +8,7 @@ class Artists extends CI_Model {
 
 		$this->db->query($query, [$email, md5($password)])->row_array();
 	}
-	public function artist_register($first_name, $last_name, $email, $password,)
+	public function artist_register($first_name, $last_name, $email, $password)
 	{
 		$md5 = md5($password);
 

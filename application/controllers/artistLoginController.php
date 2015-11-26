@@ -4,7 +4,7 @@ class ArtistLoginController extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('landing');
+		$this->load->view('artworkPage');
 	}
 
 	public function artist_login()
@@ -18,7 +18,7 @@ class ArtistLoginController extends CI_Controller {
 
 			if($returnedVal){
 				$this->session->set_userdata("currentUser", $returnedVal);
-				redirect("atist_account_page");
+				redirect("artist_account_page");
 			}
 			else{
 				$this->session->set_flashdata("error", "Invalid Log In");
