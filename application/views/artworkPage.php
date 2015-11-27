@@ -74,6 +74,7 @@
 					<img class="col-md-4 pix" src="/assets/img/Art.jpeg">
 					<img class="col-md-4 pix" src="/assets/img/Art.jpeg">
 					<img class="col-md-4 pix" src="/assets/img/Art.jpeg">
+
 				</div>
 			</div>
 		</div>

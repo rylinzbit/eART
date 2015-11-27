@@ -54,7 +54,7 @@
 		</div>	
 		<div id="button">
 			<h3 id="button_text">EXPLORE.</h3>
-			<a href=""><img id="lion_btn" src="/assets/img/lion.png"></a>
+			<a href=""><img id="lion_btn" src="/assets/img/lion.png" value="EXPLORE."></a>
 		</div>
 	</div>
 </body>

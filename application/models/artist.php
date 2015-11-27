@@ -4,7 +4,7 @@ class Artist extends CI_Model {
 
 	public function artist_login($email, $password)
 	{
-		$query = "SELECT * FROM artists WHERE email = ? AND password = ?";
+		$query = "SELECT * FROM artists  cv  WHERE email = ? AND password = ?";
 
 		$this->db->query($query, [$email, md5($password)])->row_array();
 	}
@@ -12,9 +12,9 @@ class Artist extends CI_Model {
 	{
 		$md5 = md5($password);
 
-		$query = "INSERT INTO artists (first_name, last_name, email, password, created_at, updated_at)";
+		$query = "INSERT INTO artists (first_name, last_name, email, password, created_at, updated_at) VALUES (?,?,?,?, NOW(), NOW())";
 
-		$value = [$first_name, $last_name, $email, $password];
+		$value = [$first_name, $last_name, $email, $md5];
 
 		return $this->db->query($query, $value);
 
