@@ -2,7 +2,7 @@
 
 class Customer extends CI_Model {
 
-	public function customerLogin($email, $password) 
+	public function customer_login($email, $password) 
 	{
 
 		$query = "SELECT * FROM customers WHERE email = ? AND password = ?";
@@ -10,16 +10,16 @@ class Customer extends CI_Model {
 		$this->db->query($query, [$email, md5($password)])->row_array();
 	}
 
-	public function customerRegister() 
+	public function customer_register($first_name, $last_name, $email, $password) 
 	{
 
 		$md5 = md5($password);
 
-		$query = "INSERT INTO customers (first_name, last_name, email, password) VALUES ($first_name, $last_name, $email, $md5)";
+		$query = "INSERT INTO customers (first_name, last_name, email, password, created_at, updated_at) VALUES (?, ?, ?, ?, NOW(), NOW())";
 
 		$value = [$first_name, $last_name, $email, $md5];
 
-		return $this->db->query($query, $values);
+		return $this->db->query($query, $value);
 	}
 
 }
