@@ -38,9 +38,13 @@
 |
 */
 
-$route['default_controller'] = "artistLoginController/index";
-$route['artist_login'] = "artist_login_controller/artist_login";
-$route['artist_register'] = "artist_login_controller/artist_register";
+$route['default_controller'] = "ArtistLoginController";
+$route['artist_login'] = "artistLoginController/artist_login";
+$route['artist_register'] = "artistLoginController/artist_register";
+$route['login_home'] = "customerLoginController";
+$route['login'] = "customerLoginController/customer_login";
+$route['register'] = "customerLoginController/customer_register";
+$route['account'] = "artistAccountController";
 $route['404_override'] = '';
 
 
