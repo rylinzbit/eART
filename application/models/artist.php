@@ -6,7 +6,7 @@ class Artist extends CI_Model {
 	{
 		$query = "SELECT * FROM artists  cv  WHERE email = ? AND password = ?";
 
-		$this->db->query($query, [$email, md5($password)])->row_array();
+		return $this->db->query($query, [$email, md5($password)])->row_array();
 	}
 	public function artist_register($first_name, $last_name, $email, $password)
 	{

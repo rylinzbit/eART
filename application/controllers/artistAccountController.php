@@ -6,6 +6,7 @@ class ArtistAccountController extends CI_Controller {
 	{
 		
 		$currentUser = $this->session->userdata("currentUser");
+
 		$id = $currentUser['id'];
 
 		$this->load->model('artistAccountModel');

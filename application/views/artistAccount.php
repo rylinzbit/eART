@@ -43,7 +43,7 @@
 					Image:<input type="text" name="title" placeholder="IMG UPLOAD">
 					Terms:<input type="text" name="title" placeholder="TERMS DROP DOWN MENU">
 					Price:<input type="text" name="title" placeholder="PRICE">
-					<textarea placeholder="description"></textarea>
+					<textarea placeholder="about description"></textarea>
 				</form>
 			</div>
 			<div id="edit_delete">
