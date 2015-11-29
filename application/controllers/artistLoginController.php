@@ -4,7 +4,7 @@ class ArtistLoginController extends CI_Controller {
 	
 	public function index()
 	{
-		$this->load->view('artistLogin');
+		$this->load->view('artistProfile');
 	}
 
 	public function artist_login()

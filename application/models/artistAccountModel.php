@@ -31,7 +31,7 @@ class ArtistAccountModel extends CI_Model {
 	}
 	public function deleteArtwork($id)
 	{
-		$query = "DELETE FROM artwork WHERE id = ?"
+		$query = "DELETE FROM artwork WHERE id = ?";
 		return $this->db->query($query, $id);
 	} 
 
